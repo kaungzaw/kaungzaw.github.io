@@ -1,13 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kaung Zaw</title>
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Portofilio website for Kaung Zaw - Software Developer"
+    />
+    <title>Kaung Zaw - Developer</title>
+    <style>
+      .name {
+        color: blueviolet;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .avatar {
+        padding-left: 14px;
+        width: 250px;
+        height: 250px;
+      }
+      .main-content {
+        display: none;
+      }
+      .sub-title {
+        display: block;
+      }
+      body {
+        margin: 4% auto;
+        background: #f2f2f2;
+        color: #444444;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+        text-shadow: 0 1px 0 #ffffff;
+        max-width: 75%;
+      }
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
+      }
+      a {
+        border-bottom: 1px solid #444444;
+        color: #444444;
+        text-decoration: none;
+      }
+      a:hover {
+        border-bottom: 0;
+      }
+      @media only screen and (max-width: 600px) {
+        body {
+          max-width: 90%;
+        }
+        .avatar {
+          width: 100px;
+          height: 100px;
+        }
+        .main-content {
+          display: block;
+        }
+        .sub-title {
+          display: none;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header>
+      <div class="header">
+        <div>
+          <h2>Hi, I'm <span class="name">Kaung Zaw</span></h2>
+          <h2>a Developer</h2>
+          <div class="sub-title">
+            I'm a developer specializing in designing and building solid and
+            scalable software products with great user experiences. I have built
+            including not limited to frontend web applications, backend systems,
+            and mobile applications.
+          </div>
+        </div>
+        <img class="avatar" src="./avatar.jpeg" />
+      </div>
+    </header>
+    <main>
+      <div class="main-content">
+        I'm a developer specializing in designing and building solid and
+        scalable software products with great user experiences. I have built
+        including not limited to frontend web applications, backend systems, and
+        mobile applications.
+      </div>
+      <h3>Contact Me</h3>
+      <div>
+        <a href="mailto:contact@kaungzaw.me">Mail to contact@kaungzaw.me</a>
+      </div>
+      <div>
+        <a
+          href="https://www.linkedin.com/in/kaung-zaw-b232901a5"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </div>
+      <div>
+        <a
+          href="https://www.facebook.com/profile.php?id=100008418630637"
+          target="_blank"
+          >Facebook</a
+        >
+      </div>
+    </main>
   </body>
 </html>
+
